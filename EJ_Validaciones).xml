@@ -1,0 +1,34 @@
+<!--
+Nombre: [Paul Andres Peley El Kadi]
+Curso: [Asir1]
+Fecha: [03/04/2025]
+Ejercicio: [Cuentos]
+-->
+
+<!ELEMENT cuento (personajes, trama, etiqueta*, precio?)>
+<!ATTLIST cuento
+    cod CDATA #REQUIRED             -- Código obligatorio (ej: C01)
+    titulo CDATA #REQUIRED          -- Título del cuento
+    genero (infantil | fantasía | terror) #IMPLIED>  -- Género opcional
+
+
+<!ELEMENT personajes (personaje+)>
+
+<!ELEMENT personaje (nombre, genero, descripcion?, (descripcion_fisica | imagen | url)?)>
+<!ATTLIST personaje
+    id ID #REQUIRED                               -- ID único del personaje
+    tipo (principal | secundario | antagonista) "principal">  -- Tipo con valor por defecto
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT descripcion_fisica (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT trama (#PCDATA)>
+<!ELEMENT etiqueta EMPTY>
+<!ATTLIST etiqueta
+    nombre CDATA #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio
+    moneda CDATA "eur">

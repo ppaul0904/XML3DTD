@@ -1,0 +1,31 @@
+<!--
+Nombre: [Paul Andres Peley El Kadi]
+Curso: [Asir1]
+Fecha: [03/04/2025]
+Ejercicio: [Cuentos]
+-->
+<!DOCTYPE cuento SYSTEM "cuento.dtd">
+
+<cuento cod="C01" titulo="La luna traviesa" genero="infantil">
+    <personajes>
+        <personaje id="p1" tipo="principal">
+            <nombre>Luna</nombre>
+            <genero>F</genero>
+            <descripcion>Una luna curiosa que quiere conocer el mundo.</descripcion>
+            <imagen>luna.jpg</imagen>
+        </personaje>
+
+        <personaje id="p2" tipo="secundario">
+            <nombre>Estrella</nombre>
+            <genero>F</genero>
+            <descripcion>La mejor amiga de la Luna, siempre brillante.</descripcion>
+        </personaje>
+    </personajes>
+
+    <trama>La Luna decide bajar del cielo para vivir aventuras en la Tierra.</trama>
+
+    <etiqueta nombre="aventura"/>
+    <etiqueta nombre="amistad"/>
+
+    <precio moneda="eur">12.50</precio>
+</cuento>
