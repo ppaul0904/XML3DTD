@@ -1,1 +1,0 @@
-README - Este proyecto contiene dos cuentos en formato XML validados con una DTD externa que define la estructura de personajes, trama, etiquetas, precio y atributos como cod, título, género y tipo de personaje.
